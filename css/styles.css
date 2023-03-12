@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+a,a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.body_doc {
+    display: flex;
+}
+
+.nav-link {
+    display: block;
+    padding: 5px 20px;
+    border: 1px solid black;
+}
+
+#navbar {
+    min-width: 300px;
+}

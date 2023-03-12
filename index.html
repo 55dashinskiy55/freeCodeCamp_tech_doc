@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Linux Technical Documentation</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <title>Linux Technical Documentation | Basic commands</title>
+    </head>
+    <body>
+        <div class="body_doc">
+            <nav id="navbar">
+                <header>Linux Basic Commands Documentation</header>
+                <ul class="nav_block">
+                    <li><a href="#sudo_command" class="nav-link">sudo command</a></li>
+                    <li><a href="#pwd_command" class="nav-link">pwd command</a></li>
+                    <li><a href="#cd_command" class="nav-link">cd command</a></li>
+                    <li><a href="#ls_command" class="nav-link">ls command</a></li>
+                    <li><a href="#cat_command" class="nav-link">cat command</a></li>
+                    <li><a href="#cp_command" class="nav-link">cp command</a></li>
+                    <li><a href="#mv_command" class="nav-link">mv command</a></li>
+                    <li><a href="#mkdir_command" class="nav-link">mkdir command</a></li>
+                    <li><a href="#rmdir_command" class="nav-link">rmdir command</a></li>
+                    <li><a href="#rm_command" class="nav-link">rm command</a></li>
+                    <li><a href="#reference" class="nav-link">Reference</a></li>
+                </ul>
+            </nav>
+            <main id="main-doc">
+                <section class="main-section" id="sudo_command">
+                    <header>sudo command</header>
+                    <article>
+                        <p>Short for superuser do, sudo is one of the most popular basic Linux commands that lets you perform tasks that require administrative or root permissions.</p>
+
+                        <p>When using sudo, the system will prompt users to authenticate themselves with a password.
+                        </p>
+                        <p>Then, the Linux system will log a timestamp as a tracker. By default, every root user can run sudo commands for 15 minutes/session.</p>
+                        <p>If you try to run sudo in the command line without authenticating yourself, the system will log the activity as a security event.</p>
+                        <p>Here’s the general syntax:</p>
+                        <strong>sudo (command)</strong>
+                        <p>You can also add an option, such as:</p>
+                        <ul>
+                            <li>
+                                <code>-k</code>
+                                or
+                                <code>–reset-timestamp</code>
+                                invalidates the timestamp file.</li>
+                            <li>
+                                <code>-g</code>
+                                or
+                                <code>–group=group</code>
+                                runs commands as a specified group name or ID.</li>
+                            <li>
+                                <code>-h</code>
+                                or
+                                <code>–host=host</code>
+                                runs commands on the host.</li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </body>
 </html>
